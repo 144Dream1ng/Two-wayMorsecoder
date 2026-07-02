@@ -1,5 +1,6 @@
 status = 0
 radio.set_group(1)
+pins.set_audio_pin(DigitalPin.P0)
 
 def on_received_number(receivedNumber):
     if receivedNumber == 1 and status == 1: music.ring_tone(1000)

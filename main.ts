@@ -1,5 +1,6 @@
 let status = 0
 radio.setGroup(1)
+pins.setAudioPin(DigitalPin.P0)
 basic.forever(function on_forever1() {
     if (input.buttonIsPressed(Button.A) && status == 0) {
         radio.sendNumber(1)
